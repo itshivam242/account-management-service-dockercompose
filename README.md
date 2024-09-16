@@ -12,6 +12,8 @@ What things you need to install the software and how to install them.
 
 - Docker
 - Docker Compose
+- Maven
+- Java 17
 
 ### Installing
 
@@ -22,7 +24,11 @@ A step-by-step series of examples that tell you how to get a development environ
 mkdir dockercompose-assignment && cd dockercompose-assignment
 git clone https://github.com/itshivam242/account-management-service-dockercompose.git ./
 ```
-#### 2. Start the Docker Containers
+#### 2. Create project Jar file
+```bash
+mvn clean install
+```
+#### 3. Start the Docker Containers
 Once the repository is cloned, use Docker Compose to start the service. This will pull the necessary Docker images and start the containers for the MySQL database and the Account Management Service.
 ```bash
 docker-compose up
